@@ -30,15 +30,15 @@ $$
 \ket{\psi} = \alpha \ket{0} + \beta \ket{1}
 $$
 
-we claim to create an ensemble (or, several copies) of qubits, which can model uncertainty. These may also be literal systems of several qubits undergoing the same dynamics in the environment or multiple shots of the same qubit being run one after the other.
+we model our system as an ensemble (or, several copies) of qubits, which can model uncertainty. These may also be literal systems of several qubits undergoing the same dynamics in the environment or multiple shots of the same qubit being run one after the other.
 
-They are combined together mathematically as a statistical ensemble represented as a Density Matrix, where $p_i$ represents the classical probability of the $i^{th}$ pure state:
+This ensemble is mathematically represented by a density matrix, where $p_i$ represents the classical probability of the $i^{th}$ pure state:
 
 $$
 \rho = \sum_i p_i \ket{\psi_i}\bra{\psi_i}
 $$
 
-Density Matrices capture not just "Pure States" (one of the $p_i$ is 1 and all others are 0), but more complicated "Mixed States".
+Density matrices capture not just "Pure States" (one of the $p_i$ is 1 and all others are 0), but more complicated "Mixed States".
 
 While intuitively it seems to represent a set of qubits which can be in different pure states and are averaged as the probability of each pure state, we must note that it is better to treat this as a model to capture any unwanted disturbances which may plague our once-ideal quantum state.
 
