@@ -38,6 +38,80 @@ $$
 \rho = \sum_i p_i \ket{\psi_i}\bra{\psi_i}
 $$
 
-Density matrices capture not just "Pure States" (one of the $p_i$ is 1 and all others are 0), but more complicated "Mixed States".
+<!-- Reference: https://www.youtube.com/watch?v=xC5PvbbU-TI&t=58s -->
 
+## Pure and Mixed States
+
+Density matrices capture not just "Pure States" (one of the $p_i$ is 1 and all others are 0), but more complicated "Mixed States", which cannot be described as a single ket vector like $\ket{\psi}$.
+
+Let us first write the density matrix of a pure state, which can be calculated as follows: 
+
+$$
+\rho = \ket{\psi}\bra{\psi}
+$$
+
+Substituting $\psi = \alpha \ket{0} + \beta \ket{1}$, we get:
+
+$$
+\rho = \begin{bmatrix}
+\alpha \\
+\beta
+\end{bmatrix}
+\begin{bmatrix}
+\alpha ^\star & \beta ^\star
+\end{bmatrix} = 
+\begin{bmatrix}
+|\alpha|^2 & \alpha\beta^\star\\
+\beta\alpha^\star & |\beta|^2
+\end{bmatrix}
+$$
+
+If the trace of the density matrix is 1, then the quantum state (pure or mixed) is properly normalised. In our example, this holds true because we assume $\psi$ is normalised and thus, $|\alpha|^2 + |\beta|^2 = 1$.
+
+Now, let us see what the density matrix of a mixed state looks like. Suppose due to interaction with the environment, we are left with a 50% chance of finding the system in either $\ket{0}$ or $\ket{1}$. Such a state is called the maximally mixed state. 
+
+The density matrix of this system looks like:
+
+$$
+\rho = \frac{1}{2} \ket{0}\bra{0} + \frac{1}{2} \ket{1}\bra{1} = \begin{bmatrix}
+\frac{1}{2} & 0 \\
+0 & \frac{1}{2}
+\end{bmatrix}
+$$
+
+To analyse the differences between the pure and mixed states, let us first define what coherence and purity mean.
+
+### Coherence
+
+Coherence describes the ability of a quantum system (like a qubit) to exist in a superposition of states. This enables interference effects, which are a key part of quantum information processing.
+
+As we can see, there are no off-diagonal terms in the density matrix of the maximally mixed state, and thus no phase information in the Z basis. It behaves as a classical probabilistic mixture of $ \ket{0} $ and $ \ket{1} $, rather than a quantum superposition. 
+
+As an exercise, try to calculate the density matrix of the $\ket{+}$ state in the Z basis and see how it differs from the maximally mixed state. The $\ket{+}$ state is defined as:
+
+$$
+\ket{+} = \frac{1}{\sqrt{2}} (\ket{0}+\ket{1})
+$$
+
+The off-diagonal elements of the density matrix quantify the degree of coherence in a particular basis. Their decay over time due to interactions with the environment is called decoherence.
+
+**Note**: Coherence is basis-dependent. The state $\ket{+}$ is incoherent in the X basis but coherent in the Z basis. So whether a state has off-diagonal elements (and hence coherence) depends on the measurement basis.
+
+### Purity
+
+Purity is a measure of how mixed a state is, and it is given by:
+$$
+\text{Purity} = \text{Tr}(\rho^2)
+$$  
+
+- For a pure state, $ \text{Tr}(\rho^2) = 1 $
+- For a maximally mixed state, $ \text{Tr}(\rho^2) = \frac{1}{d} $, where d is the dimension of the Hilbert space
+
+Thus, coherence and purity together provide insight into the "quantumness" of a state:  
+- Coherence captures phase relationships (off-diagonal terms).
+- Purity captures how close the state is to being pure (versus mixed).
+
+<!-- Do we want to describe Mixed States on a Bloch Sphere? -->
+
+## Calculating Observables with a Density Matrix
 
