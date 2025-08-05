@@ -115,3 +115,32 @@ Thus, coherence and purity together provide insight into the "quantumness" of a 
 
 ## Calculating Observables with a Density Matrix
 
+The density matrix formalism is that it allows us to compute the expectation value of any observable, even when the system is in a mixed state.
+
+As a reminder, for a pure state $\ket{\psi}$ and an observable represented by a Hermitian operator $A$, the expectation value is:
+
+$$
+\langle A \rangle = \bra{\psi} A \ket{\psi}
+$$
+
+In the density matrix formalism where $\rho$ is the density matrix of the system, this generalizes to both pure and mixed states as:
+
+$$
+\langle A \rangle = \text{Tr}(\rho A)
+$$
+
+
+For a mixed state described as:
+
+$$
+\rho = \sum_i p_i \ket{\psi_i}\bra{\psi_i}
+$$
+
+The expectation value becomes:
+
+$$
+\langle A \rangle = \text{Tr}\left( \sum_i p_i \ket{\psi_i}\bra{\psi_i} A \right)
+= \sum_i p_i \bra{\psi_i} A \ket{\psi_i}
+$$
+
+This is just the weighted average of the expectation values for each pure state in the ensemble, exactly as we'd expect physically.
