@@ -218,12 +218,12 @@ Where in the last step we have have used the recipe that a *sandwich* of quantum
 
 ## Heisenberg representation
 
-So far, we have seen the "Schrodinger Representation" of quantum mechanics, where the wavefunction of the particle is defined as a function of time, while operators are time independent. As a notational convention for this section, we will add a subscript "S" to denote this representation.
+So far, we have seen the "Schrodinger Representation" of quantum mechanics, where the wavefunction of the particle is defined as a function of time, while operators are time independent (unless they have explicit time dependence). As a notational convention for this section, we will add a subscript "S" to denote this representation.
 
 $$
 \psi_S(t) = U(t)\, \psi_S(0), \quad \hat{A}_S(t) = \hat{A}_S
 $$
-where,3
+where,
 $$
 U(t) = e^{-\frac{i}{\hbar} \hat{H} t}
 $$
