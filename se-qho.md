@@ -392,7 +392,7 @@ Here we see a rather evenly distributed probability density. This is in strong c
 Think about more differences concerning probability densities, like forbidden regions!
 :::
 
-As a side remark, we can again construct highly excited quantum states that mimic classical behaviour - but these are complex superpositions of many $\Psi_n$ eigenstates and are called coherent states.
+As a side remark, we can construct special quantum states that most closely resemble classical motion in the harmonic oscillator: *coherent states*. They are minimum-uncertainty states ($\Delta x \, \Delta p = \hbar/2$) and can be expressed as superpositions of many energy eigenstates $\Psi_n$. While a full discussion lies beyond the scope of this book, coherent states have many important applications, especially in laser physics and quantum optics, and related concepts appear in condensed matter systems such as superconductivity.
 
 ## Number states and number operator 
 
