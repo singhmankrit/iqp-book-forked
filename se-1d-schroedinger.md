@@ -250,7 +250,7 @@ $$
 \langle \hat{A} \rangle_S(t) = \bra{\psi_S(0)} U^\dagger(t) \, \hat{A}_S \, U(t) \ket{\psi_S(0)}
 $$
 
-In the Heisenberg picture, we have $\ket{\psi_H} \equiv \ket{\psi_S(0)}$ and $\hat{A}_H(t) = U^\dagger(t) \hat{A}_S U(t)$, so we have:
+In the Heisenberg picture, we defined $\ket{\psi_H} \equiv \ket{\psi_S(0)}$ and $\hat{A}_H(t) = U^\dagger(t) \hat{A}_S U(t)$, which gives us:
 
 $$
 \langle \hat{A} \rangle_H(t) = \bra{\psi_H} \hat{A}_H(t) \ket{\psi_H}
