@@ -40,7 +40,6 @@ chapters:
     - file: tp-intro
     - file: tp-indistinguishable
     - file: tp-exercise
-  - file: perdiodic-system
   - file: pt
     sections:
     - file: pt-intro
@@ -55,5 +54,6 @@ chapters:
   - file: appendix
     sections:
     - file: development
+    - file: periodic-system
     - file: formula-sheet
     - file: solutions
