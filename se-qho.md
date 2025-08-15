@@ -428,21 +428,19 @@ Number states are different, they describe the excitations of a particular syste
 If we also want to make clear which particular internal state is meant, we use e.g. $|n_H\rangle$ - this would mean for instance $n$ photons with $H$ polarization. Make it always clear what you mean!
 :::
 
-:::{note}
-The Quantum Harmonic Oscillator (QHO) introduced in this section plays a central role in Quantum Field Theory (QFT). In fact, a quantum field can be described as an infinite collection of independent quantum harmonic oscillators! You may see the creation and annihilation operators introduced above in many places - expressing fields, particle states, and even defining Hamiltonians.
-:::
-
 ## The two quantizations
 
 `[slide]`
 
 You will see in this course that *quantum* can mean different things, and it sometimes is also a matter of taste. Historically, two so-called "quantizations" happened:
 
-The **first quantization** is the realization that we have to describe objects with (quantum) waves that are usually, or previously, assumed to be particles. This holds clearly for atoms, electrons, neutrons, protons and so on. But for light, I think that there was never the need for a first quantization since it was already considered to be a wave since Maxwell! 
+The **first quantization** is the realization that we have to describe objects with (quantum) waves which were previously assumed to be particles. This holds clearly for atoms, electrons, neutrons, protons and so on. But for light, there was never the need for a first quantization since it was already considered to be a wave since Maxwell! 
 
 But how do we get the quantum into light waves?
 
-This is described by the **second quantization**, where wave fields become (again) quantized, for instance, by deriving a model where a light wave field can be excited with a single photon. Note, currently we think that the 2nd quantization is essential to build quantum machines which can do something really exciting.
+This is described by the **second quantization**, where wave fields also become quantized, for instance, by deriving a model where an electromagnetic field can be excited with a single photon. At the heart of this quantization is the Quantum Harmonic Oscillator, which plays a central role in Quantum Field Theory (QFT). A quantum field (like the electromagnetic field) can be described as an infinite collection of independent quantum harmonic oscillators! In this model, the creation and annihilation operators you've already seen can be used to add or remove discrete energy packets and each of these packets is a single photon! You may see the creation and annihilation operators in many more places - expressing fields, particle states, and even defining Hamiltonians.
+
+Currently, we think that the 2nd quantization is essential to build quantum machines which can do something really exciting.
 
 ```{code-cell} ipython3
 :tags: [hide-input, remove-output]
@@ -480,7 +478,7 @@ glue("b-quant", fig, display=False)
 
 (b-quant)=
 ```{glue:figure} b-quant
-In the first quantization, a particle gets wave properties, and in the second quantization, a quantum wave can be exited a discrete number of times - corresponding again to particles.
+In the first quantization, a particle gains wave properties, and in the second quantization, a quantum wave (field) can be excited a discrete number of times - corresponding to particles.
 ```
 
 ## The need for anharmonicity
