@@ -428,6 +428,10 @@ Number states are different, they describe the excitations of a particular syste
 If we also want to make clear which particular internal state is meant, we use e.g. $|n_H\rangle$ - this would mean for instance $n$ photons with $H$ polarization. Make it always clear what you mean!
 :::
 
+:::{note}
+The Quantum Harmonic Oscillator (QHO) introduced in this section plays a central role in Quantum Field Theory (QFT). In fact, a quantum field can be described as an infinite collection of independent quantum harmonic oscillators! You may see the creation and annihilation operators introduced above in many places - expressing fields, particle states, and even defining Hamiltonians.
+:::
+
 ## The need for anharmonicity
 
 `[slide]`
