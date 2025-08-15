@@ -241,6 +241,7 @@ The time-evolution operator $U(t)$ is the same as in the Schrödinger picture.
 Both of these representations are equivalent, and there is no physical difference when using one or the other. To see this explicitly, let us calculate the expectation value of the operator in both representations.
 
 In the Schrödinger picture:
+
 $$
 \langle \hat{A} \rangle_S(t) = \bra{\psi_S(t)} \hat{A}_S \ket{\psi_S(t)}
 $$
@@ -249,7 +250,7 @@ $$
 \langle \hat{A} \rangle_S(t) = \bra{\psi_S(0)} U^\dagger(t) \, \hat{A}_S \, U(t) \ket{\psi_S(0)}
 $$
 
-In the Heisenberg picture, $\ket{\psi_H} \equiv \ket{\psi_S(0)}$ and $\hat{A}_H(t) = U^\dagger(t) \hat{A}_S U(t)$, so we have:
+In the Heisenberg picture, we have $\ket{\psi_H} \equiv \ket{\psi_S(0)}$ and $\hat{A}_H(t) = U^\dagger(t) \hat{A}_S U(t)$, so we have:
 
 $$
 \langle \hat{A} \rangle_H(t) = \bra{\psi_H} \hat{A}_H(t) \ket{\psi_H}
